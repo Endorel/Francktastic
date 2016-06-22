@@ -1,0 +1,195 @@
+/*
+Theme Name: francktastic_theme
+Author: Helene Francke
+Author URI: http://192.168.33.10/wordpress/
+Version: 1.0
+*/
+
+body {
+	font-family: $font;
+	font-size: 14px;
+	background: $background;
+}
+
+.clearfix {
+	overflow: auto;
+}
+
+div.container {
+	max-width: 960px;
+	margin: 0 auto;
+	padding-left: 20px;
+	padding-right: 20px;
+	height: auto;
+}
+
+.site-header {
+	border-bottom: 2px solid black;
+
+	a, a:visited {
+		color: $helenefrancke;
+		text-decoration: none;
+		font-family: 'Fredericka the Great', cursive;
+	}
+}
+
+article.posts {
+	border-bottom: 2px dotted #999;
+}
+
+article.posts:last-of-type {
+	border-bottom: none;
+}
+
+a:link {
+	color: $linkColor;
+}
+
+a:visited {
+	color: #e600e5;
+}
+
+p {
+	line-height: 1.65em;
+}
+
+.site-footer {
+	margin-top: 30px;
+	border-top: 2px solid black;
+}
+
+/*Navigering*/
+
+.menu-trigger {
+	display: none;
+}
+
+.site-nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+.site-nav ul:before, .site-nav ul:after {
+	content: "";
+	display: table;
+}
+
+.site-nav ul:after {
+	clear: both;
+}
+
+.site-nav ul {
+	*zoom: 1;
+}
+.site-nav ul li {
+	list-style: none;
+	float: left;
+}
+
+.site-nav ul li a:link,
+.site-nav ul li a:visited {
+	display: block;
+}
+
+.previous-post {
+	float: left;
+	font-size: 16px;
+	margin-top: 20px;
+}
+
+.next-post {
+	float: right;
+	font-size: 16px;
+	margin-top: 20px;
+}
+
+/*Primary*/
+
+.site-header nav ul li a:link,
+.site-header nav ul li a:visited {
+	padding: 10px 18px;
+	border: 1px solid #bbb;
+	border-bottom: none;
+	text-decoration: none;
+
+}
+
+.site-header nav ul li a:visited {
+	color: black;
+}
+
+.site-header nav ul li {
+	margin-right: 5px;
+}
+
+.site-header nav ul li a:hover {
+	background: #00bfff;
+	color: black;
+}
+
+.site-header nav ul li.current-menu-item > a,
+.site-header nav ul li.current-menu-item a:visited {
+	font-weight: bold;
+	background: #00bfff;
+	color: black;
+}
+
+/*Pages*/
+
+article.page h1 {
+	font-size: 300%;
+}
+
+.experience {
+	float: left;
+	width: 50%;
+}
+
+.education {
+	float: right;
+	width: 50%;
+}
+
+/*innehåll*/
+.main-column {
+	float: left;
+	width: 66%;
+	height: auto;
+}
+
+#content {
+	display: none;
+}
+
+/*Sidebar*/
+.secondary-column {
+	float: right;
+	width: 30%;
+	height: auto;
+	padding-top: -30px;
+	display: block;
+}
+
+.side-widget {
+	margin-top: 30px;
+}
+
+/*Footer*/
+
+.widget-area {
+	width: 100%;
+	float: left;
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+/*Error-sida*/
+
+.error-404 {
+	width: 66%;
+	float: left;
+}
+
+section {
+	display: block;
+}
