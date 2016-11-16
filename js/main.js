@@ -4,16 +4,18 @@
 $(document).ready(function() {
 	$(".menu-trigger").click(function() {
 
-		
-
 		$(".menu-main-container").slideToggle('slow');
 
+	});
+
+	$("#title").click(function(){
+		$(this > "#content").slideToggle(slow);
 	});
 });
 
 //VANILLA JS
 
-document.getElementById('title').addEventListener('mouseover', dropdownContent);
+/*document.getElementById('title').addEventListener('mouseover', dropdownContent);
 document.getElementById('title').addEventListener('mouseout', hideContent);
 document.getElementById('title').addEventListener('touchend', showContent);
 
@@ -33,7 +35,7 @@ function showContent () {
 	} else {
 		document.getElementById('content').style.display = "none";
 	}
-}
+}*/
 
 
 
